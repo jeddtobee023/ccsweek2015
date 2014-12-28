@@ -8,7 +8,7 @@
 		<gap:platform name="android" />
 	</gap:platforms>
 	
-	<icon src="images/icon_72.png" />
+	<icon src="icon.png" />
 	<gap:splash src="splash.png" />
 	<icon src="images/icon_36.png" gap:platform="android" gap:qualifier="ldpi" />
 	<icon src="images/icon_48.png" gap:platform="android" gap:qualifier="mdpi" />
