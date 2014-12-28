@@ -8,14 +8,15 @@
 		<gap:platform name="android" />
 	</gap:platforms>
 	
+	<icon src="images/icon_72.png" />
+	<gap:splash src="splash.png" />
 	<icon src="images/icon_36.png" gap:platform="android" gap:qualifier="ldpi" />
 	<icon src="images/icon_48.png" gap:platform="android" gap:qualifier="mdpi" />
 	<icon src="images/icon_72.png" gap:platform="android" gap:qualifier="hdpi" />
 	<icon src="images/icon_96.png" gap:platform="android" gap:qualifier="xhdpi" />
-	<icon src="images/icon_72.png" />
-	<gap:splash src="splash.png" />
 	
-	<preference name="phonegap-version" value="3.5.0" />
+	
+	<preference name="phonegap-version" value="3.6.3" />
 	<preference name="orientation" value="portrait" />
 	<preference name="fullscreen" value="true" />
 	
