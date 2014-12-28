@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>CCS Week 2015</title>
+      <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" >
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" href="css/animate.min.css">
+      <style>
+         body
+		 {
+		 background: #ccc;
+		 padding-top: 75px;
+		 padding-bottom: 50px;
+		 }
+		 .col-xs-6 > h5
+		 {
+		 color: #fff;
+		 }
+      </style>
+   </head>
+   <body>
+		<div class="navbar navbar-default navbar-fixed-top" style="margin-bottom:8px;padding: 8px 10px 8px 10px;">
+			<h5 class="pull-right">
+				<a><span class="fa fa-share-alt fa-lg text-muted"></span></a>
+			</h5>
+			<h5 class="pull-left">
+				<a><span class="fa fa-chevron-left text-muted"></span></a>
+				<img src="images/ccslogo.png" style="width:26px;vertical-align:text-top;">&nbsp;About
+			</h5>
+			<span class="clearfix"></span>
+		</div>
+		<div class="container">
+		<div class="center-block" style="max-width:700px;">
+		<div class="panel panel-warning" style="margin-bottom:8px;" >
+		  <div class="panel-heading">
+			<h3 class="panel-title">Welcome to 14th CCS Week!</h3>
+		  </div>
+		  <div class="panel-body" style="min-height:50px;padding:0">
+			<div id="sponsorsgallery">
+		
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-success" style="margin-bottom:8px;">
+		  <div class="panel-heading">
+			<h3 class="panel-title">Event Information</h3>
+		  </div>
+		  <div class="panel-body">
+		  <b><u>Date</u></b><br>
+		  January 19 (Monday) - January 23 (Friday)
+		  <br>
+		  <b><u>Locations</u></b><br>
+		  Gordon College-CCS Annex, Marikit Park, Rizal Triangle, Harbor Point Ayala Mall, SM City Olongapo
+		  <a href="" class="btn btn-primary btn-block" style="margin-top:10px">View Full Event Schedule</a>
+		  </div>
+		</div>
+		
+		<div class="panel panel-primary" style="margin-bottom:8px;">
+		  <div class="panel-heading">
+			<h3 class="panel-title">Event Feed (Via Twitter)
+			<span class="pull-right">
+			<a href="" style="color:#fff"><span class="fa fa-external-link fa-lg"></span></a>&nbsp;&nbsp;
+			<span id="refreshfeed" style="color:#fff"><span class="fa fa-refresh fa-lg"></span></a>
+			</span>
+			</h3>
+			<span class="clearfix"></span>
+		  </div>
+		  <div class="panel-body" style="padding: 3px">
+				<div id="twitter-feed" class="list-group" style="margin-bottom:0">
+				</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">Social Links</h3>
+		</div>
+		<div class="panel-body" style="padding: 3px">
+		<div class="btn-group btn-group-justified">
+			<a class="btn btn-default"><i class="fa fa-facebook fa-2x"></i></a>
+			<a class="btn btn-default"><i class="fa fa-twitter fa-2x"></i></a>
+			<a class="btn btn-default"><i class="fa fa-instagram fa-2x"></i></a>
+			<a class="btn btn-default"><i class="fa fa-globe fa-2x"></i></a>
+		</div>
+		</div>
+		</div>
+		
+		<!--
+		<div class="row">
+		  <div class="col-xs-6" style="height:100px;background:#ffd0aa no-repeat;background-size:cover"><h5>LAOS</h5></div>
+		  <div class="col-xs-6" style="height:100px;background:#00ddcc;"><h5>MALAYSIA</h5></div>
+		</div>
+		<div class="row">
+		  <div class="col-xs-6" style="height:100px;background:#3388ff;"><h5>VIETNAM</h5></div>
+		  <div class="col-xs-6" style="height:100px;background:#2200cc;"><h5>PHILIPPINES</h5></div>
+		</div>
+		<div class="row">
+		  <div class="col-xs-6" style="height:100px;background:#99ff33;"><h5>MYANMAR</h5></div>
+		  <div class="col-xs-6" style="height:100px;background:#ffa0cc;"><h5>THAILAND</h5></div>
+		</div>
+		<div class="row">
+		  <div class="col-xs-6" style="height:100px;background:#ffa033"><h5>INDONESIA</h5></div>
+		  <div class="col-xs-6" style="height:100px;background:#333;"><h5>SINGAPORE</h5></div>
+		</div>
+		<div class="row">
+		  <div class="col-xs-6" style="height:100px;background:#03f3f3"><h5>BRUNEI</h5></div>
+		  <div class="col-xs-6" style="height:100px;background:#3cf323;"><h5>CAMBODIA</h5></div>
+		</div>
+		-->
+		</div><!--center-block-->
+		</div><!--container-fluid-->
+		<div class="navbar navbar-default navbar-fixed-bottom" style="min-height:0;padding:14px 0 14px 0;background:#f2f2f2;">
+			<div class="center-block" style="max-width:700px;">
+			<div class="btn-group btn-group-justified">
+			<a class="btn btn-link navglyph"><span class="glyphicon glyphicon-home text-warning"></span></a>
+			<a class="btn btn-link navglyph"><span class="glyphicon glyphicon-time"></span></a>
+			<a class="btn btn-link navglyph"><span class="glyphicon glyphicon-list"></span></a>
+			<a class="btn btn-link navglyph"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+			<a class="btn btn-link navglyph"><span class="glyphicon glyphicon-align-justify"></span></a>
+			</div>
+			</div>
+		</div>
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+	  <script src="js/hammer.min.js"></script>
+	  <script src="js/jquery.hammer.js"></script>
+	  <script src="js/twitterfeed.js"></script>
+	  <script>  
+		$.get( "sponsorsgallery.html", function( data ) {
+			 $( "#sponsorsgallery" ).html( data );
+			 });	 
+		$(function(){
+			$(".container").addClass('hidden').addClass("animated fadeInLeft").removeClass('hidden');
+			$(".navbar").addClass('hidden').addClass("animated fadeIn").removeClass('hidden');
+		});
+	  </script>
+   </body>
+</html>
