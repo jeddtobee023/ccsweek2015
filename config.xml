@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.gcccs.org.ccsweek2015" version="1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.gcccs.org.ccsweek" version="1.0">
 
 	<name>GC-CCS Week 2015</name>
 	<description>The Official Mobile App of 14th GC-CCS Week</description>
