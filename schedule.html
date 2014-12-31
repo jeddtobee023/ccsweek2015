@@ -176,10 +176,12 @@
 		</div>
       <script src="js/jquery-1.10.2.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-	  <script src="js/twitterfeed.js"></script>
+	  <script src="js/fastclick.min.js"></script>
 	  <script>
 		$(function(){
 			$(".container").css("opacity", 0).addClass("animated fadeInLeft");
+			var attachFastClick = Origami.fastclick;
+			attachFastClick(document.body);
 		});
 	  </script>
    </body>
