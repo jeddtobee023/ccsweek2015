@@ -31,14 +31,14 @@
 			</h5>
 			<span class="clearfix"></span>
 		</div>
-		<div class="container animated fadeInLeft" style="opacity:0">
+		<div class="container" style="opacity:0">
 		<div class="center-block" style="max-width:700px;">
 		<div class="panel panel-warning" style="margin-bottom:8px;" >
 		  <div class="panel-heading">
 			<h3 class="panel-title">Welcome to 14th CCS Week!</h3>
 		  </div>
-		  <div class="panel-body" style="min-height:50px;padding:0">
-			<div id="sponsorsgallery">
+		  <div class="panel-body" style="min-height:0;padding:0;">
+			<div id="sponsorsgallery" style="display:none;">
 		
 			</div>
 		  </div>
@@ -60,9 +60,9 @@
 		
 		<div class="panel panel-primary" style="margin-bottom:8px;">
 		  <div class="panel-heading">
-			<h3 class="panel-title">Event Feed (Via Twitter)
+			<h3 class="panel-title">Event Feed <small style="color: #fff">(Via Twitter)</small>
 			<span class="pull-right">
-			<a href="" style="color:#fff"><span class="fa fa-external-link fa-lg"></span></a>&nbsp;&nbsp;
+			<a href="" style="color:#fff;margin-right:15px;"><span class="fa fa-external-link fa-lg"></span></a>
 			<span id="refreshfeed" style="color:#fff"><span class="fa fa-refresh fa-lg"></span></a>
 			</span>
 			</h3>
@@ -131,6 +131,9 @@
 	  <script>
 		$.get( "sponsorsgallery.html", function( data ) {
 			 $( "#sponsorsgallery" ).html( data );
+			 setTimeout(function(){
+			 $(".container").css("opacity", 0).addClass("animated fadeInLeft");
+			 $( "#sponsorsgallery" ).delay(1100).slideDown("fast");},100);
 			 });
 	  </script>
    </body>
