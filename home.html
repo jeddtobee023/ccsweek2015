@@ -68,9 +68,7 @@
 			</h3>
 			<span class="clearfix"></span>
 		  </div>
-		  <div class="panel-body" style="padding: 3px">
-				<div id="twitter-feed" class="list-group" style="margin-bottom:0">
-				</div>
+		  <div id="twitter-feed" class="list-group" style="margin-bottom:0">
 		  </div>
 		</div>
 		
@@ -106,11 +104,11 @@
 	  <script src="js/twitterfeed.js"></script>
 	  <script>
 		$.get( "sponsorsgallery.html", function( data ) {
-			 $( "#sponsorsgallery" ).html( data );
-			 setTimeout(function(){
-			 $(".container").css("opacity", 0).addClass("animated fadeInLeft");
-			 $( "#sponsorsgallery" ).delay(1100).slideDown("fast");},50);
+			 $( "#sponsorsgallery" ).html( data ).delay(1100).slideDown("fast");
 			 });
+		$(function(){
+			$(".container").css("opacity", 0).addClass("animated fadeInLeft");
+		});
 	  </script>
    </body>
 </html>
