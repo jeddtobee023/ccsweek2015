@@ -125,15 +125,13 @@
 		</div>
       <script src="js/jquery-1.10.2.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-	  <script src="js/hammer.min.js"></script>
-	  <script src="js/jquery.hammer.js"></script>
 	  <script src="js/twitterfeed.js"></script>
 	  <script>
 		$.get( "sponsorsgallery.html", function( data ) {
 			 $( "#sponsorsgallery" ).html( data );
 			 setTimeout(function(){
 			 $(".container").css("opacity", 0).addClass("animated fadeInLeft");
-			 $( "#sponsorsgallery" ).delay(1100).slideDown("fast");},100);
+			 $( "#sponsorsgallery" ).delay(1100).slideDown("fast");},50);
 			 });
 	  </script>
    </body>
