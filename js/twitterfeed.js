@@ -66,7 +66,7 @@
 											 
 								feedHTML += '<div class="list-group-item" id="tw'+displayCounter+'" style="padding:5px"><div class="media">';                  
 								feedHTML += '<div class="media-left"><img src="'+profileimage+'"images/twitter-feed-icon.png" class="img-rounded" style="width:42px"></div>';
-								feedHTML += '<div class="media-body" style="width:100%"><span class="pull-right">'+relative_time(feeds[i].created_at)+'</span><b>'+tweetscreenname+'</b>&nbsp;<i>@'+tweetusername+'</i><br>'+status+'<div class="clearfix"></div></div>';
+								feedHTML += '<div class="media-body" style="width:100%"><span class="pull-right" style="font-size:0.85em">'+relative_time(feeds[i].created_at)+'</span><b>'+tweetscreenname+'</b>&nbsp;<i>@'+tweetusername+'</i><br>'+status+'<div class="clearfix"></div></div>';
 								if ((isaretweet == true) && (showretweetindicator == true)) {
 									feedHTML += '<div id="retweet-indicator"></div>';
 								}
