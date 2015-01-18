@@ -17,7 +17,7 @@
       </style>
    </head>
    <body>
-		<div class="container animated fadeIn" style="opacity:0">
+		<div class="container animated fadeIn infinite" style="opacity:0">
 		<div class="center-block" style="max-width:700px;">
 		<h3 class="text-center">Loading...</h3>
 		</div><!--center-block-->
@@ -27,7 +27,7 @@
 	  <script>
 		$(function(){
 		setTimeout(function(){
-		location.href="home.html";
+		window.location.replace("home.html");
 		},500);
 		
 		});

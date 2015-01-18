@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>CCS Week 2015</title>
+      <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" >
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" href="css/animate.min.css">
+      <style>
+         body
+		 {
+		 background: #333;
+		 padding-top: 75px;
+		 padding-bottom: 50px;
+		 }
+		 .col-xs-6 > h5
+		 {
+		 color: #fff;
+		 }
+      </style>
+   </head>
+   <body>
+		<div class="navbar navbar-default navbar-fixed-top" style="margin-bottom:8px;padding: 8px 10px 8px 10px;">
+			<!--<h5 class="pull-right">
+				<a><span class="fa fa-share-alt fa-lg text-muted"></span></a>
+			</h5> -->
+			<h5 class="pull-left">
+				<a href="teams.html"><span class="fa fa-chevron-left text-muted"></span></a>
+				<img src="images/ccslogo-sm.png" style="width:26px;vertical-align:text-top;">&nbsp;<span id="navtext">Team Name</span>
+			</h5>
+			<span class="clearfix"></span>
+		</div>
+		<div class="container">
+		<div class="center-block" style="max-width:700px;">
+		
+		<div id="teamcontainer">
+		<div class="panel panel-warning">
+			<div class="panel-body">
+				<div id="loading-container" class="text-center">
+				<img id="imgloader" src="images/ajax-loader.gif" style="width:32px;opacity:0.5;vertical-align:middle;-webkit-border-radius:40px;border-radius: 40px;">&nbsp;Loading...
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		</div><!--center-block-->
+		</div><!--container-fluid-->
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+	  <script src="js/fastclick.min.js"></script>
+	  <script>
+		var teamchosen = "";
+		var vars = [], hash;
+		var q = document.URL.split('?')[1];
+		if(q != undefined){
+			q = q.split('&');
+			for(var i = 0; i < q.length; i++){
+				hash = q[i].split('=');
+				vars.push(hash[1]);
+				vars[hash[0]] = hash[1];
+				teamchosen = vars['team'];
+			}
+		}
+		else
+		{
+		location.href="home.html";
+		}
+		$(function(){
+			$(".navbar, .container").addClass("animated zoomIn");
+			$.get("teams/"+teamchosen+".html", function(data){
+			$("#navtext").html("Team "+teamchosen.toUpperCase());
+			$("#teamcontainer").html(data);
+			});
+			var attachFastClick = Origami.fastclick;
+			attachFastClick(document.body);
+		});
+	  </script>
+   </body>
+</html>
